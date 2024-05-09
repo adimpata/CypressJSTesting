@@ -1,0 +1,129 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "End to end store validation",
+    "line": 1,
+    "id": "end-to-end-store-validation",
+    "tags": [],
+    "uri": "store.feature",
+    "elements": [
+      {
+        "id": "end-to-end-store-validation;store-products-delivery",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Store products delivery",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I open ECommerce Website page",
+            "result": {
+              "status": "passed",
+              "duration": 1923000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I add items to cart",
+            "result": {
+              "status": "passed",
+              "duration": 1899000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I validate the total price of several products",
+            "result": {
+              "status": "passed",
+              "duration": 108000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I select the country submit and check the response received",
+            "result": {
+              "status": "passed",
+              "duration": 11006000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-store-validation;completing-the-shopping-form",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Completing the shopping form",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I open ECommerce Website page",
+            "result": {
+              "status": "passed",
+              "duration": 830000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "name",
+                      "gender"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "bobz",
+                      "Male"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 11,
+            "name": "The form is completed with the details",
+            "result": {
+              "status": "passed",
+              "duration": 411000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "The form is validated",
+            "result": {
+              "status": "passed",
+              "duration": 61000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "The shop page is selected",
+            "result": {
+              "status": "passed",
+              "duration": 398000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

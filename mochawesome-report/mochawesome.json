@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-04-30T18:23:59.086Z",
+    "end": "2024-04-30T18:24:09.589Z",
+    "duration": 10503,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "15ae7396-f71b-4b77-b784-674c419bdbfd",
+      "title": "",
+      "fullFile": "cypress\\e2e\\integration\\GreenKart\\Test3.cy.js",
+      "file": "cypress\\e2e\\integration\\GreenKart\\Test3.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "46313ca8-792d-4c0c-8a60-248edbb0bcf2",
+          "title": "My third Suite Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test Case with boxes",
+              "fullTitle": "My third Suite Test Test Case with boxes",
+              "timedOut": null,
+              "duration": 7764,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "//Check boxes\ncy.visit(\"https://rahulshettyacademy.com/AutomationPractice/\");\ncy.get('#checkBoxOption1').check().should('be.checked').and('have.value', 'option1');\ncy.get('#checkBoxOption2').uncheck().should('not.be.checked');\ncy.get('input[type=\"checkbox\"]').check(['option2', 'option3']);\n//Static Dropdown\ncy.get('select').select('option2').should('have.value', 'option2');\n//Dynamic Dropdown\ncy.get('#autocomplete').type('Ro');\ncy.get('.ui-menu-item').each(($e1, index, $list) => {\n  if ($e1.text() === \"Romania\") {\n    $e1.click();\n  }\n});\n//autocomplete\n// cy.get('#autocomplete').should('have.value','Romania')\n//visible invisible\ncy.get('#displayed-text').should('be.visible');\ncy.get('#hide-textbox').click();\ncy.get('#displayed-text').should('not.be.visible');\ncy.get('#show-textbox').click();\n//radio buttons\ncy.get('[value=\"radio1\"]').check().should('be.checked');",
+              "err": {},
+              "uuid": "3c951052-c033-4b06-a4f9-5d03ea74fa0a",
+              "parentUUID": "46313ca8-792d-4c0c-8a60-248edbb0bcf2",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3c951052-c033-4b06-a4f9-5d03ea74fa0a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7764,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
